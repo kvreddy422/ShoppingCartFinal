@@ -32,7 +32,7 @@ import com.emc.shoppingcartfinal.services.LoginServices;
 import com.emc.shoppingcartfinal.services.LoginServicesIMPL;
 
 /*controller logic*/ 
-
+//hahahahahahhahahahahah shopping controller 
 @Controller
 @RequestMapping(value = "/")
 public class ShoppingCartController {
