@@ -1,4 +1,5 @@
-package com.emc.shoppingcartfinal;
+/*
+ * Vaibhav */package com.emc.shoppingcartfinal;
 
 import java.text.DateFormat;
 import java.util.ArrayList;
@@ -56,10 +57,7 @@ public class ShoppingCartController {
 	public String login(@ModelAttribute(value = "userLogin") User user, Model model) {
 
 		User user1;
-		// user1=loginuser.Login(user.getEmailId(), user.getPassword());*/
-		// user1=ui.getUserByEmailId("admin1");
-		// User user2=new User("anshul", "kalra", "anshul@gmail.com",
-		// "bangalore", "", "bangalore", "karnataka", "India", 8123, "admin",2);
+	
 
 		Map<String, Object> mapuser = new HashMap();
 		mapuser = oi.Login(user.getEmailId(), user.getPassword());
@@ -79,7 +77,7 @@ public class ShoppingCartController {
 	@RequestMapping(value = "/registration1", method = RequestMethod.POST)
 	public String Registration(@ModelAttribute(value = "registerUser") User user, Model model) {
 
-		// System.out.println(user.getFname());
+		
 		return "registration";
 
 	}
